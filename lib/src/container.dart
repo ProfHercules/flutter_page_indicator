@@ -111,7 +111,7 @@ class PageContainerState extends State<PageIndicatorContainer> {
 
   bool _onScroll(ScrollNotification notification) {
     if (notification.metrics is PageMetrics) {
-      final PageMetrics metrics = notification.metrics;
+      final metrics = notification.metrics;
       currentPage = metrics.page;
       setState(() {});
     }
